@@ -85,6 +85,28 @@ window.RIVAH = {
       "instagram": "https://www.instagram.com/thenyayofficial"
     },
     {
+      "id": "uday",
+      "name": "Uday Land Developers",
+      "industry": "Real Estate & Land Development",
+      "role": "Real Estate Media Production & Performance Marketing",
+      "summary": "Create premium real estate visuals that attract potential buyers, build project appeal, and generate sales enquiries.",
+      "challengeTitle": "Objective",
+      "challenge": "Create premium real estate visuals that attract potential buyers, build project appeal, and generate sales enquiries.",
+      "approachTitle": "Our approach",
+      "approachIntro": "We handled the media production, creating high-quality, visually compelling property creatives, followed by strategic paid advertising campaigns to convert audience attention into genuine buyer enquiries.",
+      "approach": [],
+      "statsTitle": "Campaign results",
+      "stats": [
+        { "v": "₹25,000", "l": "Ad investment" },
+        { "v": "₹65 Lakh", "l": "Property sales generated" },
+        { "v": "260x", "l": "ROAS" },
+        { "v": "28+", "l": "Leads generated" },
+        { "v": "25,900%", "l": "Revenue-to-ad-spend return" }
+      ],
+      "note": "Campaign highlight: ₹65 lakh in property sales generated through just ₹25,000 in ad spend, powered by strategic media production and performance marketing.",
+      "instagram": ""
+    },
+    {
       "id": "art",
       "name": "Art Interiorz",
       "industry": "Interior Design & Architecture | Nagpur",

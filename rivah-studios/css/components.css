@@ -171,3 +171,4 @@ dialog p,dialog li{color:var(--ink2)}
 .fi svg{width:20px;height:20px}
 dialog ul{margin:.3rem 0 0;padding-left:1.1rem}
 @media (min-width:1000px){.fg{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.fg .fc:last-child:nth-child(odd){grid-column:1/-1}}

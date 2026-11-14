@@ -29,7 +29,7 @@
   function open(i) {
     var f = list[i], h = '<span class="tag">' + f.industry + '</span><h2 id="fd-t">' + f.name + "</h2>";
     if (f.role) h += "<p><b>" + f.role + "</b></p>";
-    if (f.summary !== f.approachIntro) h += "<p>" + f.summary + "</p>";
+    if (f.summary !== f.approachIntro && f.summary !== f.challenge) h += "<p>" + f.summary + "</p>";
     if (f.challenge) h += "<h4>" + (f.challengeTitle || "The challenge") + "</h4><p>" + f.challenge + "</p>";
     if (f.approachIntro || f.approach.length) {
       h += "<h4>" + (f.approachTitle || "Our approach") + "</h4>";
