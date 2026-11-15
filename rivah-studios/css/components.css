@@ -172,3 +172,10 @@ dialog p,dialog li{color:var(--ink2)}
 dialog ul{margin:.3rem 0 0;padding-left:1.1rem}
 @media (min-width:1000px){.fg{grid-template-columns:repeat(2,1fr)}}
 @media (min-width:1000px){.fg .fc:last-child:nth-child(odd){grid-column:1/-1}}
+.reel .rl{position:absolute;inset:0;z-index:2;display:block;color:inherit;text-decoration:none}
+.reel .snd{position:absolute;left:.8rem;top:.8rem;z-index:3;width:38px;height:38px;border-radius:50%;background:rgba(239,230,212,.18);border:1px solid rgba(239,230,212,.45);color:var(--cream);display:grid;place-items:center;cursor:pointer;padding:0;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transition:background .3s}
+.reel .snd:hover,.reel .snd.on{background:var(--terra-d);border-color:var(--terra-d)}
+.reel .snd svg{width:19px;height:19px}
+.reel .snd .s-on,.reel .snd.on .s-off{display:none}
+.reel .snd.on .s-on{display:block}
+.reel .rl .bt{position:absolute;left:.9rem;right:.9rem;bottom:.9rem}

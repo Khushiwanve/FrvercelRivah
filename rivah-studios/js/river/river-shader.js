@@ -11,7 +11,7 @@ float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(ha
 float fbm(vec2 p,int o){float v=0.,a=.5;for(int i=0;i<5;i++){if(i>=o)break;v+=a*noise(p);p=p*2.03+17.1;a*=.5;}return v;}
 vec2 vor(vec2 p){vec2 g=floor(p),f=fract(p);float md=8.,id=0.;for(int j=-1;j<=1;j++){for(int i=-1;i<=1;i++){vec2 o=vec2(float(i),float(j));vec2 r=o+hash22(g+o)-f;float d=dot(r,r);if(d<md){md=d;id=hash(g+o);}}}return vec2(sqrt(md),id);}
 float cx(float y){float u=y/H*N;float A=Wd*(Wd<700. ? .37 : .4);return Wd*.5+A*cos(3.14159*(u-.5))+Wd*.045*sin(u*7.+1.)+Wd*.02*sin(u*19.+2.)+Wd*.008*sin(u*41.);}
-float hw(float y){float u=y/H*N;float b=clamp(Wd*.053,(Wd<700. ? 28. : 40.),78.);return b*(.8+.28*sin(u*5.+.5)+.15*sin(u*13.+2.));}
+float hw(float y){float u=y/H*N;float b=clamp(Wd*.061,(Wd<700. ? 32. : 46.),90.);return b*(.8+.28*sin(u*5.+.5)+.15*sin(u*13.+2.));}
 float rip(vec2 w){float a=fbm(vec2(w.x*.05,(w.y-t*32.)*.02),4);float b=fbm(vec2(w.x*.12+5.,(w.y-t*55.)*.05),3);return a*.65+b*.35;}
 void main(){
  vec2 p=vec2(gl_FragCoord.x/dpr,R.y-gl_FragCoord.y/dpr+sy);
