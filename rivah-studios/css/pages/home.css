@@ -33,3 +33,5 @@
 .fl .c3 b{color:var(--ink)}
 .fl .c2{width:52%}
 .fl .c3{width:44%}
+.hero{grid-template-columns:1fr}
+.hero>div{max-width:46rem}
