@@ -179,3 +179,9 @@ dialog ul{margin:.3rem 0 0;padding-left:1.1rem}
 .reel .snd .s-on,.reel .snd.on .s-off{display:none}
 .reel .snd.on .s-on{display:block}
 .reel .rl .bt{position:absolute;left:.9rem;right:.9rem;bottom:.9rem}
+.reel{height:min(72vh,460px)}
+@media (max-width:700px){.reel{height:340px}}
+@media (max-width:700px){
+.reels{flex-direction:column;overflow:visible;gap:1.2rem;-webkit-mask-image:none;mask-image:none}
+.reel{width:100%;height:auto;aspect-ratio:var(--r,9/16)}
+}
