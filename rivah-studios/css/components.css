@@ -102,7 +102,7 @@ dialog p,dialog li{color:var(--ink2)}
 .btn:hover{background:var(--umber);border-color:var(--umber)}
 .btn{letter-spacing:.03em}
 .note{font-size:.85rem;color:var(--ink2);margin:0}
-.reels{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:1rem}
+.reels{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,220px));column-gap:28px;row-gap:1rem}
 .reel{position:relative;aspect-ratio:9/16;border-radius:20px;overflow:hidden;display:block;color:var(--cream);text-decoration:none;isolation:isolate;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .reel:hover{transform:translateY(-6px)}
 .reel .rm{position:absolute;inset:0;z-index:-1;display:block;font:500 .72rem var(--font-display);letter-spacing:.2em;text-transform:uppercase;text-align:left;padding:1.05rem 3.6rem 1rem 1rem;line-height:1.4}
@@ -184,4 +184,19 @@ dialog ul{margin:.3rem 0 0;padding-left:1.1rem}
 @media (max-width:700px){
 .reels{flex-direction:column;overflow:visible;gap:1.2rem;-webkit-mask-image:none;mask-image:none}
 .reel{width:100%;height:auto;aspect-ratio:var(--r,9/16)}
+}
+/* Desktop reel spacing fix */
+/* Desktop: proper spacing between reel cards */
+@media (min-width: 801px) {
+  #reels-grid.reels {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    column-gap: 28px !important;
+    row-gap: 28px !important;
+  }
+
+  #reels-grid.reels > .reel {
+    width: 100% !important;
+    min-width: 0;
+  }
 }

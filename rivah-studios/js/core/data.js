@@ -26,14 +26,33 @@ window.RIVAH = {
   /* Featured partners shown at the top of "Creators we grow". Edit text here. "instagram" adds the Instagram button. */
   featured: [
     {
+      "id": "gov",
+      "name": "Government & Institutional Media Management",
+      "industry": "Government PR, Strategic Communication & Large-Scale Media Production",
+      "role": "",
+      "summary": "We manage large-scale media production and strategic public communication for government institutions, covering government initiatives, active programs, public services and institutional activities.",
+      "challenge": "",
+      "approachIntro": "Our approach combines high-volume content production, creative storytelling, diverse visual formats and strategic PR to increase public awareness, engagement and digital visibility.",
+      "approach": [],
+      "statsTitle": "Our scope and growth targets",
+      "stats": [
+        { "v": "450+", "l": "Videos produced every month" },
+        { "v": "10M", "l": "Targeted views in Month 1" },
+        { "v": "20M", "l": "Targeted views in Month 2" },
+        { "v": "50K", "l": "Targeted followers on each social media platform by Month 5" }
+      ],
+      "note": "End-to-end media production and digital communication.",
+      "instagram": ""
+    },
+    {
       "id": "cyber",
-      "name": "Cyberkat (@saibarkkat)",
+      "name": "Sai Barkkat (@saibarkkat)",
       "industry": "Astrology & Spiritual Guidance",
       "role": "Personal Branding & Organic Content Growth · 4 months",
-      "summary": "Rivah Studios handled personal branding, content strategy, professional shoots, and video production to build Cyberkat's digital presence and audience engagement.",
+      "summary": "Rivah Studios handled personal branding, content strategy, professional shoots, and video production to build Sai Barkkat's digital presence and audience engagement.",
       "challenge": "",
       "approachTitle": "What we did",
-      "approachIntro": "Rivah Studios handled personal branding, content strategy, professional shoots, and video production to build Cyberkat's digital presence and audience engagement.",
+      "approachIntro": "Rivah Studios handled personal branding, content strategy, professional shoots, and video production to build Sai Barkkat's digital presence and audience engagement.",
       "approach": [],
       "statsTitle": "Highlights",
       "stats": [
@@ -52,7 +71,8 @@ window.RIVAH = {
     },
     {
       "id": "nyaay",
-      "name": "Nyaay Official",
+      "image": "assets/featured/nyaay.jpg",
+      "name": "Nyay Official",
       "industry": "Personal Brand | Nagpur",
       "role": "Personal Branding & Organic Content Strategy",
       "summary": "Build a recognizable personal brand in Nagpur and establish public awareness of the client's identity, expertise, and work.",
@@ -116,25 +136,6 @@ window.RIVAH = {
       ],
       "note": "",
       "instagram": "https://www.instagram.com/artinteriorz"
-    },
-    {
-      "id": "gov",
-      "name": "Government & Institutional Media Management",
-      "industry": "Government PR, Strategic Communication & Large-Scale Media Production",
-      "role": "",
-      "summary": "We manage large-scale media production and strategic public communication for government institutions, covering government initiatives, active programs, public services and institutional activities.",
-      "challenge": "",
-      "approachIntro": "Our approach combines high-volume content production, creative storytelling, diverse visual formats and strategic PR to increase public awareness, engagement and digital visibility.",
-      "approach": [],
-      "statsTitle": "Our scope and growth targets",
-      "stats": [
-        { "v": "450+", "l": "Videos produced every month" },
-        { "v": "10M", "l": "Targeted views in Month 1" },
-        { "v": "20M", "l": "Targeted views in Month 2" },
-        { "v": "50K", "l": "Targeted followers on each social media platform by Month 5" }
-      ],
-      "note": "End-to-end media production and digital communication.",
-      "instagram": ""
     }
   ],
 
@@ -142,7 +143,7 @@ window.RIVAH = {
      "poster" = cover image, both in assets/reels/. "ratio" is "9/16" for vertical or "16/9" for horizontal videos.
      "likes" and "views" are optional (leave them out to hide). */
   reels: [
-    { title: "Nyaay Official", client: "Nyaay Official", ratio: "9/16", video: "assets/reels/nyaay.mp4", poster: "assets/reels/nyaay.jpg", instagram: "https://www.instagram.com/reel/DaDMVPlv2PX/" },
+    { title: "Nyay Official", client: "Nyay Official", ratio: "9/16", video: "assets/reels/nyaay.mp4", poster: "assets/reels/nyaay.jpg", instagram: "https://www.instagram.com/reel/DaDMVPlv2PX/" },
     { title: "The Mangaluru Kitchen", client: "The Mangaluru Kitchen", ratio: "16/9", video: "assets/reels/mangaluru-kitchen.mp4", poster: "assets/reels/mangaluru-kitchen.jpg", instagram: "https://www.instagram.com/reel/DTE0mZyD2LD/" },
     { title: "Skylight", client: "Skylight", ratio: "16/9", video: "assets/reels/skylight.mp4", poster: "assets/reels/skylight.jpg", instagram: "https://www.instagram.com/reel/DTW84tdCBuL/" }
   ],
@@ -150,7 +151,7 @@ window.RIVAH = {
      "for" can be: all, small, big, creator. */
   faq: [
     { q: "What does Rivah Studios do?", a: "We help brands and creators grow online with strategic digital marketing, social media management, content and video, branding, websites and SEO, all built to drive real results.", for: ["all"] },
-    { q: "Who do you work with?", a: "Creators and personal brands, small businesses and startups, growing brands, and larger businesses. We shape the plan to your size, goals and budget.", for: ["all"] },
+    { q: "Who do you work with?", a: "Premium and big businesses, growing brands, and businesses that need a complete brand setup. We shape the plan to your goals.", for: ["all"] },
     { q: "How do we get started?", a: "Message us on WhatsApp or send the form on the contact page. We start with a short conversation about your goals, then suggest a plan you can say yes or no to.", for: ["all"] },
     { q: "How much does it cost?", a: "It depends on what you need and how often, so there is no one fixed price. Tell us your goal and budget and we will suggest a plan that fits, and you decide.", for: ["all"] },
     { q: "Do you guarantee followers or sales?", a: "No, and be careful of anyone who does. What we commit to is a clear plan, good quality work, steady publishing and honest numbers on what is working.", for: ["all"] },

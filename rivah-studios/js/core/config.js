@@ -4,6 +4,8 @@ window.RIVAH_CONFIG = {
   email: "rivahstudio@gmail.com",
   instagram: "https://www.instagram.com/rivahstudios.in",
   messages: {
+    premium: "Hi Rivah Studios, we are a premium business and would like to discuss our brand and marketing.",
+    setup: "Hi Rivah Studios, we need a complete brand setup and would like to discuss it.",
     creator: "Hi Rivah Studios, I am a creator and would like to grow my content.",
     small: "Hi Rivah Studios, I run a small business and would like to know how you can help.",
     brand: "Hi Rivah Studios, I have a growing brand and would like to scale it.",
