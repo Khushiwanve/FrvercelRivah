@@ -7,20 +7,4 @@
 @media (min-width:1400px){.panel{max-width:1080px}}
 @media (max-width:700px){footer{grid-template-columns:1fr;gap:2rem}}
 @media (max-width:480px){.btn{padding:.8rem 1.1rem;white-space:nowrap}}
-/* Mobile: Center reels in the Work section */
-@media (max-width: 800px) {
-  #reels-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
 
-  #reels-grid > * {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
