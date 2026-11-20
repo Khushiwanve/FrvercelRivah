@@ -1,6 +1,6 @@
 /* layout.css: Page frame: navbar, panels, marquee, footer, floating WhatsApp button. */
 nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:.9rem 5vw;transition:.3s}
-nav.s{background:rgba(239,230,212,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.s{background:rgba(239,230,212,.96);border-bottom:1px solid var(--line)}
 .logo{display:flex;align-items:center;gap:.75rem;text-decoration:none}
 .logo img{display:block;width:auto}
 .lg-mark{height:44px}
