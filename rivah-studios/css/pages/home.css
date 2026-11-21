@@ -35,3 +35,8 @@
 .fl .c3{width:44%}
 .hero{grid-template-columns:1fr}
 .hero>div{max-width:46rem}
+.slot{display:block;height:1.15em;overflow:hidden;position:relative}
+.slot em{position:absolute;left:0;top:0;transform:translateY(110%);transition:transform .6s cubic-bezier(.7,0,.2,1)}
+.slot em.on{transform:none}
+.slot em.off{transform:translateY(-110%)}
+.who .card a{font-size:1.6rem;letter-spacing:0;padding-top:.6rem}
