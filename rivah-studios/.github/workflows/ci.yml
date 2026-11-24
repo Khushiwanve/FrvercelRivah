@@ -1,0 +1,43 @@
+name: Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: JavaScript syntax
+        run: |
+          for f in $(find js -name '*.js'); do node --check "$f" || exit 1; done
+          echo "All JavaScript files parse."
+
+      - name: HTML lint
+        run: npx --yes htmlhint@1.1.4 "*.html"
+
+      - name: Links, images, scripts and styles exist
+        run: |
+          python3 - <<'PY'
+          import re, sys, pathlib
+          bad = []
+          for page in pathlib.Path('.').glob('*.html'):
+              html = page.read_text(encoding='utf-8')
+              for ref in re.findall(r'(?:href|src)="([^"#?]+)', html):
+                  if re.match(r'(https?:|mailto:|tel:|data:|//)', ref):
+                      continue
+                  if not pathlib.Path(ref.lstrip('/')).exists():
+                      bad.append(f'{page}: missing {ref}')
+          for line in bad:
+              print('::error::' + line)
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Launch reminders
+        run: |
+          n=$(grep -c "sample: true" js/core/data.js || true)
+          if [ "$n" -gt 0 ]; then echo "::warning::$n sample: true entries are still in js/core/data.js (replace before launch)"; fi
+          if ! test -f assets/founder/rishabh-founder.jpg; then echo "::notice::Founder photo not added (fine if the Founder page is removed)"; fi
