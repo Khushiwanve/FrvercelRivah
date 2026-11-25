@@ -6,8 +6,11 @@ on:
   pull_request:
 
 jobs:
-  checks:
+    checks:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: rivah-studios
     steps:
       - uses: actions/checkout@v4
 
