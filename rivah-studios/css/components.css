@@ -188,3 +188,71 @@ dialog ul{margin:.3rem 0 0;padding-left:1.1rem}
 .reels{flex-direction:column;overflow:visible;gap:1.4rem;-webkit-mask-image:none;mask-image:none}
 .reel{flex:none;width:100%;height:auto;aspect-ratio:var(--r,9/16)}
 }
+
+/* =====================================
+   SELECTED WORK — PREMIUM 2 × 2 GRID
+   Desktop and tablet only
+===================================== */
+
+@media (min-width: 701px) {
+
+  #selected .sw {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+  }
+
+  #selected .sw .card {
+    min-height: 225px;
+    padding: 25px 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 18px;
+    background: #E7DBC4;
+    border: 1px solid rgba(22,19,18,.13);
+    box-shadow: 0 10px 25px rgba(59,42,32,.07);
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+  }
+
+  #selected .sw .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 17px 32px rgba(59,42,32,.13);
+  }
+
+  /* Bold, dark and eye-catching numbers */
+  #selected .sw .card b {
+    display: block;
+    color: #292019;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(2rem, 3vw, 2.65rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -.065em;
+    margin-bottom: 7px;
+  }
+
+  /* Keep Compounding balanced */
+  #selected .sw .card:nth-child(3) b {
+    font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+    letter-spacing: -.055em;
+  }
+
+  #selected .sw .card small {
+    color: #49382D;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    line-height: 1.5;
+    margin: 7px 0 13px;
+  }
+
+  #selected .sw .card p {
+    color: #443B34;
+    font-size: .91rem;
+    line-height: 1.7;
+    margin-top: 0;
+  }
+}
