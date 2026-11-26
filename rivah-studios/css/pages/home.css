@@ -121,3 +121,131 @@
 #home h1{font-size:clamp(2.2rem,11.4vw,3.4rem);max-width:none}
 .steps4 div{gap:1rem}
 }
+
+/* =====================================
+   RIVAH STUDIOS - HERO SLIDING MARQUEE
+===================================== */
+
+.hero-marquee {
+  width: 100%;
+  max-width: 650px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+
+  /* Space below CTA buttons */
+  margin-top: clamp(55px, 8vh, 90px);
+
+  padding: 15px 0;
+
+  border-top: 1px solid rgba(17, 17, 17, 0.20);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.20);
+}
+
+.hero-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: heroMarqueeSlide 25s linear infinite;
+  will-change: transform;
+}
+
+.hero-marquee-group {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+
+  gap: clamp(25px, 4vw, 45px);
+  padding-right: clamp(25px, 4vw, 45px);
+}
+
+.hero-marquee-group span {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(11px, 1.2vw, 15px);
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: #111111;
+  white-space: nowrap;
+}
+
+.hero-marquee-group i {
+  color: #A94D30;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Infinite animation */
+
+@keyframes heroMarqueeSlide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+
+@media (hover: hover) {
+  .hero-marquee:hover .hero-marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .hero-marquee {
+    max-width: 100%;
+    margin-top: 55px;
+    padding: 13px 0;
+  }
+
+  .hero-marquee-group {
+    gap: 28px;
+    padding-right: 28px;
+  }
+
+  .hero-marquee-group span {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .hero-marquee {
+    margin-top: 45px;
+    padding: 12px 0;
+  }
+
+  .hero-marquee-group {
+    gap: 22px;
+    padding-right: 22px;
+  }
+
+  .hero-marquee-group span {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-marquee-group i {
+    font-size: 14px;
+  }
+
+  .hero-marquee-track {
+    animation-duration: 22s;
+  }
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-marquee-track {
+    animation: none;
+  }
+}
